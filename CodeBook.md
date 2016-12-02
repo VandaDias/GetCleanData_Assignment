@@ -110,58 +110,35 @@ tBodyGyroMean
 tBodyGyroJerkMean
 
 #Analysis Performed
+
 1. Open packages needed to perform the analysis: dplyr
 
-
 2. Read all the files needed
+ - activity_labels.txt
+ - features.txt
+ - subject_train.txt
+ - X_train.txt
+ - y_train.txt
+ - subject_test.txt
+ - X_test.txt
+ - y_test.txt
 
-- activity_labels.txt
-
-- features.txt
-
-- subject_train.txt
-
-- X_train.txt
-
-- y_train.txt
-
-- subject_test.txt
-
-- X_test.txt
-
-- y_test.txt
-
-
-3. Assgniment Goal 1: merge the training and the test sets to create one data set
-
-- names the column headings for the 561 features dataset, both in the train and in the test sets
-
-- creates new data frames to incorporate new columns, both in the train and in the test sets
-
-- adds specific columns of subject and activity to both the train and the set data sets
-
-- merges the training and the test sets: HAR_dataset
-
+3. Assignment Goal 1: merge the training and the test sets to create one data set
+ - names the column headings for the 561 features dataset, both in the train and in the test sets
+ - creates new data frames to incorporate new columns, both in the train and in the test sets
+ - adds specific columns of subject and activity to both the train and the set data sets
+ - merges the training and the test sets: HAR_dataset
 
 4. Assignment Goal 2: extracts only the measurements on the mean and standard deviation for each measurement
-
-- removes duplicated column names
-
-- identifies mean and std column names
-
-- selects mean and std column names and last 2 columns (activity and subject)
-
+ - removes duplicated column names
+ - identifies mean and std column names
+ - selects mean and std column names and last 2 columns (activity and subject)
 
 5. Assignment Goal 3: uses descriptive activity names to name the activities in the data set
 
-
 6. Assignment Goal 4: appropriately labels the data set with descriptive variable names
-
-- labels all column names to lower case
-
-- substitutes "-" for "_" in all column names
-
-- eliminates the parenteses in all column names
-
+ - labels all column names to lower case
+ - substitutes "-" for "_" in all column names
+ - eliminates the parenteses in all column names
 
 7. Assignment Goal 5: from the data set in step 6, creates a second, independent tidy data set with the average of each variable for each activity and each subject: HAR_grouped
